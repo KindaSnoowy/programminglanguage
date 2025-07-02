@@ -2,11 +2,24 @@
 #define tokens_enum_h
 
 typedef enum {
-   // one line tokens
-   EQUAL_TOKEN, QUOTE_TOKEN,
+   // single character tokens
+  LEFT_PAREN, RIGHT_PAREN, LEFT_BRACE, RIGHT_BRACE,
+  COMMA, DOT, MINUS, PLUS, SEMICOLON, SLASH, STAR,
 
-   // literal tokens
-   TOKEN_IDENTIFIER, TOKEN_STRING, TOKEN_NUMBER
+  // one or two characters tokens
+  EXCLAMATION, EXCLAMATION_EQUAL,
+  EQUAL, EQUAL_EQUAL,
+  GREATER, GREATER_EQUAL,
+  LESS, LESS_EQUAL,
+
+  // literals
+  IDENTIFIER, STRING, NUMBER,
+
+  // keywords
+  AND, CLASS, ELSE, FALSE, FUNC, FOR, IF, NIL, OR,
+  PRINT, RETURN, SUPER, THIS, TRUE, VAR, WHILE,
+
+  TOKEN_EOF
 } TokenType;
 
 typedef struct {

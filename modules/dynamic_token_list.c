@@ -42,6 +42,7 @@ int insert_token(DynamicTokenList* list, Token* token) {
 
    list->tokens[list->size] = *token;
    list->size++;
+   
    return 0; 
 }
 
@@ -53,4 +54,6 @@ int remove_token(DynamicTokenList* list, int position) {
       list->tokens[i] = list->tokens[i + 1];
    }
    list->size--;
+
+   return 0;
 }

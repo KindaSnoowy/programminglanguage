@@ -9,8 +9,8 @@ typedef struct {
 } DynamicTokenList;
 
 DynamicTokenList* start_list();
-void destroy_list(DynamicTokenList* list);
-void insert_token(DynamicTokenList* list, Token* token);
-void remove_token(DynamicTokenList* list, Token* token);
+int destroy_list(DynamicTokenList* list);
+int insert_token(DynamicTokenList* list, Token* token);
+int remove_token(DynamicTokenList* list, Token* token);
 
 #endif
