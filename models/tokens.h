@@ -19,7 +19,7 @@ typedef enum {
   AND, CLASS, ELSE, FALSE, FUNC, FOR, IF, NIL, OR,
   PRINT, RETURN, SUPER, THIS, TRUE, VAR, WHILE,
 
-  TOKEN_EOF
+  TOKEN_EOF, ERROR
 } TokenType;
 
 typedef struct {
